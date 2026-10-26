@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gasparpadi-depaudit"
+version = "0.1.0"
+description = "按代码里真实的 import 核对依赖清单"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "gasparpadi" }]
+keywords = ["dependencies", "audit", "imports", "packaging"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/gasparpadi/depaudit"
+Repository = "https://github.com/gasparpadi/depaudit"
+Issues = "https://github.com/gasparpadi/depaudit/issues"
+
+[project.scripts]
+depaudit = "depaudit:main"
+
+[tool.setuptools]
+py-modules = ["depaudit"]
