@@ -9,6 +9,23 @@
 - 单文件，`depaudit.py` 拷走就能用
 - 只读项目目录，不改任何文件、不装任何东西
 
+<!-- ipos:install -->
+## 安装
+
+零依赖，Python 3.10+ 即可：
+
+```bash
+pip install gasparpadi-depaudit
+```
+
+装完直接用命令名调用：
+
+```bash
+depaudit --help
+```
+
+也可以不用安装，直接把 `depaudit.py` 拷走用——它只依赖标准库。
+
 ## 为什么需要它
 
 接手别人的项目，第一件事往往是看依赖清单。然后你会发现清单和代码对不上：
